@@ -11,14 +11,39 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
+    <script>
+        $(function() {
+            $('.bind-menu-button').trigger('click');
+        })
+    </script>
 </head>
 
 <body>
     <div class="wrapper">
+
+        <div class="side-menu">            
+            <div class="menu-list-layout">
+                <button type="button" class="close-button bind-close-button"></button>
+                <ul class="menu-list">
+                    <li>
+                        <a class="history" href="#">박스 맵핑 이력 확인</a>
+                    </li>
+                    <li>
+                        <a class="setting" href="#">시스템 설정</a>
+                    </li>
+                    <li>
+                        <a class="off" href="#">종료</a>
+                    </li>
+                </ul>
+            </div>            
+        </div>
+        <div class="side-menu-dim"></div>
+
+
         
         <header class="header__top">
             <div class="header__top_left">
-                <p class="date">2021년 12월 15일</p>
+                <a href="#" class="menu bind-menu-button"></a><p class="date">2021년 12월 15일</p>
             </div>
             <div class="header__top_center">
                 <p><em></em>Media4th &amp; Company</p>
