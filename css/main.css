@@ -71,7 +71,7 @@ html, body {
 }
 
 .wrapper main {
-    background-color: yellow;
+    background: #454954;
     height: calc(100vh - 60px);
 }
 
