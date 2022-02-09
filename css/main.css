@@ -650,27 +650,28 @@ body.show-side-menu .side-menu-dim {
 .popup-form section.pop-contents {
     height: 400px;
 }
-.popup-form section.pop-contents .order-list {
+
+.order-list3 {
     padding: 0 30px;
+    height: 100%;
 }
-.popup-form section.pop-contents .order-list li {
+.order-list3 li {
     border-bottom: solid 1px #dadbdd;
+    width: 100%;
 }
-.popup-form section.pop-contents .order-list li:first-child {
+.order-list3 li:first-child {
     border-top: solid 1px #dadbdd;
 }
-.popup-form section.pop-contents .order-list li p {
+.order-list3 li p {
     position: relative;
     height: 90px;
     line-height: 90px;
     font-size: 30px;
 }
-.popup-form section.pop-contents .order-list li p .count {
+.order-list3 li p .count {
     position: absolute;
     top: 0; right: 0;
 }
-
-
 
 .popup-form section.pop-contents-full {
     height: calc(100% - 155px);

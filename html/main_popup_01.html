@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickupbox</title>
+
+    <link rel="stylesheet" href="../css/main.css" >
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+     <script>
+        $(function() {
+            $('.bind-add-order').eq(0).trigger('click');
+        })
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        
+        <header class="header__top">
+            <div class="header__top_left">
+                <p class="date">2021년 12월 15일</p>
+            </div>
+            <div class="header__top_center">
+                <p><em></em>Media4th &amp; Company</p>
+            </div>
+            <div class="header__top_right">
+                <p class="time">09:36</span>
+            </div>
+        </header>
+
+        <main class="contents">
+            <div class="cell-rows">
+                <div class="cell on">
+                    <div class="cell-layout">
+                        <div class="no-bg"></div>
+                        <p class="no">01</p>
+                        <p class="order-no">151</p>
+                        <div class="status">
+                            <span class="icon-time">1분경과</span><span class="icon-lock">도어닫힘</span>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="cell on">
+                    <div class="cell-layout">
+                        <div class="no-bg"></div>
+                        <p class="no">02</p>
+                        <p class="order-no">160</p>
+                        <div class="status">
+                            <span class="icon-time">15분경과</span><span class="icon-unlock">도어열림</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell-layout">
+                        <div class="no-bg"></div>
+                        <p class="no">03</p>
+                        <div class="status">
+                            <span class="icon-add bind-add-order">주문 추가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell-layout">
+                        <div class="no-bg"></div>
+                        <p class="no">04</p>
+                        <div class="status">
+                            <span class="icon-add bind-add-order">주문 추가</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell-rows">
+                <div class="cell">
+                    <div class="cell-layout">
+                        <div class="no-bg"></div>
+                        <p class="no">05</p>
+                        <div class="status">
+                            <span class="icon-add bind-add-order">주문 추가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell-layout">
+                        <div class="no-bg"></div>
+                        <p class="no">06</p>
+                        <div class="status">
+                            <span class="icon-add bind-add-order">주문 추가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell-layout">
+                        <div class="no-bg"></div>
+                        <p class="no">07</p>
+                        <div class="status">
+                            <span class="icon-add bind-add-order">주문 추가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell-layout">
+                        <div class="no-bg"></div>
+                        <p class="no">08</p>
+                        <div class="status">
+                            <span class="icon-add bind-add-order">주문 추가</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell-rows">
+                <div class="cell">
+                    <div class="cell-layout">
+                        <div class="no-bg"></div>
+                        <p class="no">09</p>
+                        <div class="status">
+                            <span class="icon-add bind-add-order">주문 추가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell-layout">
+                        <div class="no-bg"></div>
+                        <p class="no">10</p>
+                        <div class="status">
+                            <span class="icon-add bind-add-order">주문 추가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell-layout">
+                        <div class="no-bg"></div>
+                        <p class="no">11</p>
+                        <div class="status">
+                            <span class="icon-add bind-add-order">주문 추가</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell-layout">
+                        <div class="no-bg"></div>
+                        <p class="no">12</p>
+                        <div class="status">
+                            <span class="icon-add bind-add-order">주문 추가</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+       
+
+    </div>
+
+
+
+    <div class="popup-order" style="display: none;">
+
+        <div class="popup">
+            <div class="popup-dim"></div>
+            <div class="popup-section">
+                <div class="popup-form">
+                    <div class="layout">
+
+                        <div class="right-status show"><!-- show 빼면 추가하면 도어현황 안보임-->
+                            <div class="status-box">
+                                <div class="arr"></div>
+                                <p class="title">도어<br/>현황</p>
+                                <div class="status">
+                                    <!--
+                                    <span class="icon-lock">닫힘</span>
+                                    -->
+                                    <span class="icon-unlock">열림</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <header>
+                            <div class="title">
+                                <div class="no-bg"></div>
+                                <p class="no">01</p>
+                                주문번호<em>157</em>
+                                <button type="button" class="btn-close bind-button-close"></button>
+                            </div>
+                        </header>
+                        <section class="pop-contents">
+
+                            <ul class="order-list3"><!-- update. 2022.02.09 -->
+                                <li>
+                                    <p class="order-item">
+                                        아이시스
+                                        <span class="count">1</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="order-item">
+                                        칠리치즈핫도그
+                                        <span class="count">1</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="order-item">
+                                        포토환타(M)
+                                        <span class="count">2</span>
+                                    </p>
+                                </li>
+                            </ul>
+                            
+                        </section>
+                        <footer>
+                            <div class="action-button">
+                                <button type="button" class="btn-recall">재호출</button>
+                                <button type="button" class="btn-ok">완료</button>
+                                <button type="button" class="btn-cancel">취소</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
